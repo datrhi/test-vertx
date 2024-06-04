@@ -20,7 +20,7 @@ public class NoteVerticle extends AbstractVerticle {
 
 
   @Override
-  public void start() throws Exception {
+  public void start() {
     vertx.eventBus().consumer(CREATE, this.createNoteHandler);
     vertx.eventBus().consumer(GETS, this.getNoteListHandler);
   }

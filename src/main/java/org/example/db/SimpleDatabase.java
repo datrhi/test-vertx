@@ -22,12 +22,6 @@ public class SimpleDatabase {
   }
 
   private void initDatabase() {
-//    if (fileSystem == null) {
-//      throw new Exception("File system have not initialized yet!");
-//    }
-//    if (filePath == null) {
-//      throw new Exception("File path is empty!");
-//    }
     this.fileSystem.exists(filePath).compose(exist -> {
           if (!exist) {
             return this.fileSystem.createFile(filePath);

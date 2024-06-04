@@ -10,9 +10,6 @@ public class Note {
     return object.put(note.id, note.content);
   }
 
-  public Note() {
-  }
-
   public Note(String id, String content) {
     this.id = id;
     this.content = content;

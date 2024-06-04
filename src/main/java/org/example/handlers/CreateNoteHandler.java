@@ -9,10 +9,6 @@ import org.example.models.Note;
 
 public class CreateNoteHandler implements Handler<Message<JsonObject>> {
 
-
-  public CreateNoteHandler() {
-  }
-
   SimpleDatabase db;
 
   @Inject

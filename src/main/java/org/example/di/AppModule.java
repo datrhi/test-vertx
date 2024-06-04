@@ -22,7 +22,7 @@ public class AppModule {
   @Provides
   @Singleton
   Vertx provideVertx() {
-    return Vertx.vertx();
+    return vertx;
   }
 
   @Provides
@@ -30,23 +30,6 @@ public class AppModule {
   String provideFilePath() {
     return "notes.txt";
   }
-//
-//  @Provides
-//  @Singleton
-//  SimpleDatabase provideSimpleDatabase(Vertx vertx) {
-//    return new SimpleDatabase(vertx, "notes.txt");
-//  }
-//
-//  @Provides
-//  @Singleton
-//  CreateNoteHandler provideCreateNoteHandler(SimpleDatabase db) {
-//    return new CreateNoteHandler(db);
-//  }
-//
-//  @Provides
-//  @Singleton
-//  GetNoteListHandler provideGetNoteListHandler(SimpleDatabase db) {
-//    return new GetNoteListHandler(db);
-//  }
+
 }
 
